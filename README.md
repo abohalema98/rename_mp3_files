@@ -67,3 +67,10 @@ Feel free to contribute to improve the script! Submit a pull request or report i
 
 ### License
 This project is open-source and available under the [MIT License](LICENSE).
+
+### Tool output examples
+![Screenshot 2024-12-10 033354](https://github.com/user-attachments/assets/94957886-74ee-479d-a6c4-241cc70fba37)
+
+![Screenshot 2024-12-10 033311](https://github.com/user-attachments/assets/de0b1cbd-7cec-4ec4-93d1-52e7ec0b3a50)
+
+![Screenshot 2024-12-10 040144](https://github.com/user-attachments/assets/be4a0fdb-28f0-4f36-ba54-573e48eba659)
