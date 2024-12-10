@@ -1,76 +1,47 @@
-# Rename MP3 Tool
+### File Renaming Script
 
-A Python-based tool to rename `.mp3` files in a folder to sequentially numbered names (`001.mp3`, `002.mp3`, etc.).
-
----
-
-## Features
-- Renames all `.mp3` files in a specified folder.
-- Assigns sequential numbers to filenames (e.g., `001.mp3`, `002.mp3`).
-- Handles large numbers of files efficiently.
-- Interactive: prompts the user to enter the folder path at runtime.
+This Python script allows users to rename files in a specified folder sequentially with a chosen file extension. It is a simple utility for organizing files with consistent naming patterns.
 
 ---
 
-## Requirements
-
-### Software Requirements
-- Python 3.6 or later
-
-### Supported Platforms
-- Windows
-- macOS
-- Linux
+### Features
+- **Dynamic File Extension**: Users can specify the desired file extension (e.g., `.mp3`, `.png`).
+- **Sequential Renaming**: Files are renamed in a `001.extension`, `002.extension` format.
+- **Error Handling**: Validates folder paths, file extensions, and handles unexpected errors gracefully.
+- **Universal Compatibility**: Works with any file type, not limited to `.mp3`.
 
 ---
 
-## Installation
+### How to Use
+1. **Prerequisites**:
+   - Python installed on your system.
+   - A folder with files you want to rename.
 
-1. **Download or Clone the Tool**:
-   - Clone the repository using Git:
+2. **Run the Script**:
+   - Save the script as `rename_files.py`.
+   - Run the script using a terminal or command prompt:
      ```bash
-     git clone <repository-url>
+     python rename_files.py
      ```
-   - Or download the folder as a ZIP file and extract it.
 
-2. **Navigate to the Tool Folder**:
-   ```bash
-   cd rename_mp3_tool
-   ```
+3. **Follow Prompts**:
+   - Enter the full path to the folder containing the files.
+   - Specify the desired file extension (e.g., `mp3`, `png`).
 
-3. **Install Required Dependencies** (if any):
-   ```bash
-   pip install -r requirements.txt
-   ```
-   > Note: This tool only uses Python’s standard libraries, so `requirements.txt` may be empty.
+4. **Results**:
+   - Files in the folder will be renamed sequentially, starting from `001`.
 
 ---
 
-## Usage
-
-1. Run the tool:
-   ```bash
-   python rename_mp3_tool.py
-   ```
-
-2. Enter the folder path containing `.mp3` files when prompted.
-
-3. The tool will rename all `.mp3` files in the folder to sequentially numbered filenames (e.g., `001.mp3`, `002.mp3`).
-
----
-
-## Example
-
-### Input:
-A folder contains the following files:
+### Example
+#### Before:
 ```
-MySong.mp3
-AnotherTrack.mp3
-CoolAudio.mp3
+song1.mp3
+track.mp3
+audiofile.mp3
 ```
 
-### Output:
-The renamed files will be:
+#### After:
 ```
 001.mp3
 002.mp3
@@ -79,38 +50,16 @@ The renamed files will be:
 
 ---
 
-## Notes
-- The original names of the `.mp3` files will be removed.
-- The tool will not rename files without the `.mp3` extension.
-- If the specified folder does not exist, the tool will prompt an error message.
+### Limitations
+- Files without extensions or those already matching the desired extension will be skipped.
+- Ensure that the folder contains only files you wish to rename.
 
 ---
 
-## Troubleshooting
-- **No files renamed:** Ensure the folder contains `.mp3` files.
-- **Path not found error:** Verify the folder path entered is correct.
-- **Permission denied:** Ensure you have write permissions for the folder.
+### Contributing
+Feel free to contribute to improve the script! Submit a pull request or report issues.
 
 ---
 
-## Optional: Create Executable (Advanced)
-
-To package this script into a standalone executable (e.g., for users without Python):
-
-1. Install PyInstaller:
-   ```bash
-   pip install pyinstaller
-   ```
-
-2. Generate the executable:
-   ```bash
-   pyinstaller --onefile rename_mp3_tool.py
-   ```
-
-3. The executable will be located in the `dist` folder.
-
----
-
-## License
-This tool is free to use and modify. Share and enjoy!
-
+### License
+This project is open-source and available under the [MIT License](LICENSE).
