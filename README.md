@@ -1,3 +1,7 @@
+### Updated README File Content
+
+---
+
 ### File Renaming Script
 
 This Python script allows users to rename files in a specified folder sequentially with a chosen file extension. It is a simple utility for organizing files with consistent naming patterns.
@@ -14,7 +18,7 @@ This Python script allows users to rename files in a specified folder sequential
 
 ### How to Use
 1. **Prerequisites**:
-   - Python installed on your system.
+   - Python installed on your system. Download Python from the official website: [Download Python](https://www.python.org/downloads/).
    - A folder with files you want to rename.
 
 2. **Run the Script**:
